@@ -1,0 +1,231 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Product Landing Page
+    link(href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed:400,700|Roboto:400,500i" rel="stylesheet") 
+    link(rel='stylesheet' href='css/main.min.css')
+    link(rel='stylesheet' href='css/responsive.min.css')
+    link(rel='stylesheet' href='css/animate.min.css')
+    //[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]
+    script(src="js/jquery.js")
+    script(src='js/wow.js')
+    script(src="js/jquery.easing.min.js")
+    script(src='js/script.js')
+  body
+  
+    // top nav  
+    #top
+        a.top__logo(href='#top')
+            img(src='img/logo.png' alt='NDrive')
+        ul.top__nav
+            li.t-nav__item
+                a(href='#description') description
+            li.t-nav__item
+                a(href='#submit') submit application
+            li.t-nav__item
+                a(href='#products') products
+            li.t-nav__item
+                a(href='#benefits') benefits
+            li.t-nav__item
+                a(href='#review') review
+            li.t-nav__item
+                a(href='#ask') ask a question
+            li.t-nav__item
+                a(href='#subscibe') subscibe
+    
+    //header
+    .header#description 
+        .header__content
+            h1.h-content__heading NanoDrive - it tribological a new generation of compounds that reduce the wear of rubbing parts mechanisms.
+            p.h-content__text NanoDrive developed and manufactured the Scientific and Production Enterprise "nanospheres". NanoDrive drugs are used to reduce friction and wear of rubbing parts mechanisms, a significant extension of their service life, restoring the geometry of parts optimization gaps, reducing fuel consumption, power, vibration, noise, heat while operating vehicles, special vehicles, industrial and hydraulic equipment.
+            .h-content__buttons
+                a.c-buttons__learn.button__primary(href='#') learn more
+                a.c-buttons__add.button__secondary(href='#') become a partner
+        .header__img 
+                .img__rect
+                    img(src='img/item.png' alt='product')
+                
+                
+    //properties
+        //
+            section#properties
+                .properties__head.head
+                    h2.head__heading properties nanodrive composition
+                    p.head__text The technology of processing nodes and nanomodifiers NanoDrive friction mechanisms is one of the methods to increase the wear resistance of mechanical parts, wear-free based on the effect of the implementation of selective transfer.
+                .properties__image 
+                    .img__text 
+            
+            
+    //submit 
+    section#submit
+        .submit__head.head
+            h2.head__heading 
+                |be among  
+                span the first!
+            p.head__text 
+                |We are the first official distributor in Rostov-on-Don and the Rostov region.
+                |Have time to get into the top hundred oprbavshih and get a 
+                span 10% discount 
+                |   to re-order!
+        form.submit__form.animated.wow.bounceInUp(action='' method='post')
+            label(for='name')
+            input(type='text' id='name' name="name" value="" placeholder='Your name' required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+")
+            label(for='tel')
+            input(type='tel' id='tel' placeholder='Your phone number' required)
+            label(for='email')
+            input(type='email' id='email' placeholder='Your email' required)
+        .submit__button
+            button.button__primary submit application
+            
+            
+    //products
+    section#products
+        .products__head.head
+            h2.head__heading products nanodrive
+        ul.products__items
+            li.p-items__item.animated.wow.bounceInDown
+                .p-img__rect
+                    img(src='img/slide1.png')
+                h4.item__heading 
+                    span NanoDrive 
+                    small transmission
+                p.item__text Tribological nano structure for processing transmission of passenger cars and motorcycles.
+                p.item__price Цена: 1670 RUB
+                button.bitton__primary learn more
+                    
+            li.p-items__item.animated.wow.bounceInUp
+                .p-img__rect
+                    img(src='img/slide2.png')
+                h4.item__heading 
+                    span NanoDrive 
+                    small fuel system
+                p.item__text Tribological nano structure for processing transmission of passenger cars and motorcycles.
+                p.item__price Цена: 2170 RUB
+                button.bitton__primary learn more
+                    
+            li.p-items__item.animated.wow.bounceInDown
+                .p-img__rect
+                    img(src='img/slide3.png')
+                h4.item__heading 
+                    span NanoDrive 
+                    small transmission
+                p.item__text Tribological nano structure for processing transmission of passenger cars and motorcycles.
+                p.item__price Цена: 1870 RUB
+                button.bitton__primary learn more
+                    
+            li.p-items__item.animated.wow.bounceInUp
+                .p-img__rect
+                    img(src='img/slide4.png')
+                h4.item__heading 
+                    span NanoDrive 
+                    small motor
+                p.item__text Tribological nano structure for processing transmission of passenger cars and motorcycles.
+                p.item__price Цена: 1590 RUB
+                button.bitton__primary learn more
+                    
+        //benefits
+        #benefits
+            .benefits__content
+                .b-content__heading NanoDrive - is tribological compositions of the new generation.
+                ul.b-content__list
+                    li.c-list__item Significant increase in the life of vehicles and equipment.
+                    li.c-list__item Simple application in standard mode of operation of vehicles.
+                    li.c-list__item  Tribological compositions - our main specialization.
+                    li.c-list__item Compositions NanoDrive - innovative products.
+                    li.c-list__item Guaranteed quality products.
+                    li.c-list__item Handling of friction units in a single step.
+                    li.c-list__item Optimally low cost.
+            .benefits__video
+                .b-video__rect                     
+                    iframe(src="https://www.youtube.com/embed/37UKskKPFc8" frameborder="0" allowfullscreen width='515' height='287')
+
+
+                    
+        //reviews
+        section#reviews
+            .reviews__head.head
+                h2.head__heading the opinion of the experts and users
+            ul.reviews__items
+                li.r-items__person.animated.wow.bounceInDown
+                    img(src='img/photo1.png')
+                    h4.r-person__heading Evgeny Osipov
+                    p.r-person__info Owner BMW X6 sport
+                    p.r-person__text NanoDrive for car - it effective drugs for the repair and maintenance of vehicles.
+                    
+                li.r-items__person.animated.wow.bounceInUp
+                    img(src='img/photo2.png')
+                    h4.r-person__heading Alexandr Gruntov
+                    p.r-person__info Owner Mercedes CLS 500
+                    p.r-person__text NanoDrive for motorists - is a line of unique tools for processing all friction units of cars and trucks, special machinery.
+                
+                li.r-items__person.animated.wow.bounceInDown
+                    img(src='img/photo3.png')
+                    h4.r-person__heading Maria Krasnikova
+                    p.r-person__info Owner Opel Astra
+                    p.r-person__text NanoDrive for industrial and hydraulic equipment - a range of unique tools for processing all friction units.
+                
+                li.r-items__person.animated.wow.bounceInUp
+                    img(src='img/photo4.png')
+                    h4.r-person__heading Anton Voloshin
+                    p.r-person__info Owner Lada Priora
+                    p.r-person__text NanoDrive for motorists - is a line of unique tools to handle all the friction units passenger.
+                    
+                    
+        //ask a question
+        section#ask
+            .ask__head.head
+                h2.head__heading still have questions? 
+                    span write to us!
+            form.ask__form(action='submit')
+                .top__inputs
+                    label(for='name')
+                    input.a-form__small(type='text' id='name' name="name" value="" placeholder='Your name' required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+")
+                    label(for='email')
+                    input.a-form__small(type='email' id='email' placeholder='Your email' required)
+                label(for='message')
+                input.a-form__big(type='text' id='message' placeholder='Message subject')
+                textarea(placeholder='Message text' required)
+            button.button__secondary.ask__button write to us
+            
+            
+        //subscribe
+        section#subscribe
+            .subscribe__content.animated.wow.bounceInUp
+                .subscribe__head.head
+                    h2.s-head__heading do not miss any of the action!
+                    p.s-head__text Sign up for updates and get the latest information on e-mail
+                .subscribe__field
+                    label(for='email')
+                    input(type='email' id='email' placeholder='Enter your email')
+                    button to send
+                
+        //footer
+        footer
+            .footer__nav
+                .footer__logo
+                    img(src='img/logo.png' alt='NDrive')
+                ul.f-nav
+                    li.f-nav__item
+                        a(href='#description') description
+                    li.f-nav__item
+                        a(href='#submit') submit application
+                    li.f-nav__item
+                        a(href='#products') products
+                    li.f-nav__item
+                        a(href='#benefits') benefits
+                    li.f-nav__item
+                        a(href='#reviews') reviews
+                    li.f-nav__item
+                        a(href='#ask') ask a question
+                    li.f-nav__item
+                        a(href='#subscribe') subscribe
+                        
+            .footer__copyright
+                    p.copyright__info Copyright &copy;
+                            span design by andrew serbul
+                        
+                    
